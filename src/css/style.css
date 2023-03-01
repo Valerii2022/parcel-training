@@ -1,0 +1,16 @@
+body {
+  background-color: tomato;
+  color: azure;
+  padding: 20px 100px;
+}
+
+.color-wrapper {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000;
+}
+
+.wrapper {
+  width: 600px;
+}

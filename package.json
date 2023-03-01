@@ -1,24 +1,18 @@
 {
-  "name": "node",
+  "name": "src",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "build": "babel src -d lib"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Valerii2022/node.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel",
+    "build": "parcel build"
   },
   "keywords": [],
-  "author": "Valerii <vmpometun@gmail.com>",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Valerii2022/node/issues"
-  },
-  "homepage": "https://github.com/Valerii2022/node#readme",
   "devDependencies": {
-    "@babel/cli": "^7.21.0",
-    "@babel/core": "^7.21.0"
+    "parcel": "^2.8.3"
   }
 }
