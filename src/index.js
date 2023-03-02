@@ -1,43 +1,9 @@
-const handleWrapperOver = ({ target }) => {
-  const color =
-    "#" + (Math.random().toString(16) + "000000").substring(2, 8).toUpperCase();
+import {handleWrapperOver, handleWrapperOut} from "./js/function";
+// import {refs} from "./js/refs";
+import {wrapperRef} from "./js/refs";
 
-  if (target.classList.contains("color-wrapper")) {
-    target.style.backgroundColor = color;
-  }
-};
-
-const handleWrapperOut = ({ target }) => {
-  const color = "#fff";
-
-  if (target.classList.contains("color-wrapper")) {
-    target.style.backgroundColor = color;
-  }
-};
-
-const wrapperRef = document.querySelector(".wrapper");
+// refs.wrapperRef.addEventListener("mouseover", handleWrapperOver);
+// refs.wrapperRef.addEventListener("mouseout", handleWrapperOut);
 
 wrapperRef.addEventListener("mouseover", handleWrapperOver);
 wrapperRef.addEventListener("mouseout", handleWrapperOut);
-
-// body.style.backgroundColor = `'#' + (Math.random().toString(16) + '000000').substring(2, 8).toUpperCase()'`;
-
-// class Hero {
-//   constructor(name) {
-//     this._name = name;
-//   }
-
-//   get name() {
-//     return this._name;
-//   }
-
-//   set name(newName) {
-//     this._name = newName;
-//   }
-// }
-
-// const soldier = new Hero("boss");
-
-// const result = (a, b) => a * b;
-
-// console.log(result(2, 8));
